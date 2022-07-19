@@ -1,5 +1,6 @@
 
 
+import 'package:canine_care/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:canine_care/screens/login.dart';
 import 'package:canine_care/screens/register.dart';
@@ -9,14 +10,15 @@ import 'package:canine_care/screens/home_screen.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: MyLogin(),
+      home: SplashScreen(),
       theme: ThemeData(fontFamily: 'Circular'),
       debugShowCheckedModeBanner: false,
-      routes: {
-        'register': (context) => MyRegister(),
-        'login': (context) => MyLogin(),
-        'home_screen':(context)=>HomeScreen(),
-      },
+      // routes: {
+      //   'register': (context) => MyRegister(),
+      //   'login': (context) => MyLogin(),
+      //   'home_screen':(context)=>HomeScreen(),
+      //   'splash':(context)=>SplashScreen(),
+      // },
     ),
   );
 }
@@ -27,15 +29,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        body: Stack(
-          children: [
-            DrawerScreen(),
-            HomeScreen(),
-            //LoginPage(),
-
-          ],
-
-        ),
+        body: SplashScreen()
       ),
     );
   }

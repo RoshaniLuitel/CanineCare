@@ -103,7 +103,12 @@ class _MyLoginState extends State<MyLogin> {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () { Navigator.pushNamed(context, 'home_screen');},
+                                    onPressed: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) =>  HomeScreen()),
+                                      );
+                                    },
                                     icon: Icon(
                                       Icons.arrow_forward,
                                     )),

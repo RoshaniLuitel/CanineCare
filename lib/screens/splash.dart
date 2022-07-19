@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
 //set timer for splash screen
-    Timer(const Duration(seconds: 4), () async {
+    Timer(const Duration(seconds: 1), () async {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) =>  OnboardingPage()),
