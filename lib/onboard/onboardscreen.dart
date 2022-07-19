@@ -1,3 +1,5 @@
+import 'package:canine_care/screens/login.dart';
+import 'package:canine_care/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:canine_care/navigation/main.dart';
@@ -148,7 +150,7 @@ class _OnboardingPageState extends State<OnboardingPage>{
           prefs.setBool('showHome', true);
 
           Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomePage()),
+            MaterialPageRoute(builder: (context) => MyLogin()),
           );
         },
 
