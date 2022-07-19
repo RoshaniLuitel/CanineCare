@@ -1,3 +1,4 @@
+import 'package:canine_care/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:canine_care/screens/home_screen.dart';
 
@@ -123,7 +124,10 @@ class _MyLoginState extends State<MyLogin> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.pushNamed(context, 'register');
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) =>  MyRegister()),
+                                  );
                                 },
                                 child: Text(
                                   'Sign Up',
